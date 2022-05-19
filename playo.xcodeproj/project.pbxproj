@@ -7,15 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5CAA10D8D92EB382574712B1 /* Pods_playo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6873A6F39227579E237F4CDE /* Pods_playo.framework */; };
+		DA74543C2835D3A600135D37 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA74543B2835D3A600135D37 /* WebViewController.swift */; };
 		DAA51EA9283544C900529F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EA8283544C900529F56 /* AppDelegate.swift */; };
 		DAA51EAB283544C900529F56 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EAA283544C900529F56 /* SceneDelegate.swift */; };
 		DAA51EAD283544C900529F56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EAC283544C900529F56 /* ViewController.swift */; };
 		DAA51EB0283544C900529F56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA51EAE283544C900529F56 /* Main.storyboard */; };
 		DAA51EB2283544C900529F56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAA51EB1283544C900529F56 /* Assets.xcassets */; };
 		DAA51EB5283544C900529F56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAA51EB3283544C900529F56 /* LaunchScreen.storyboard */; };
+		DAA51EC2283545D300529F56 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EC0283545D300529F56 /* NewsTableViewCell.swift */; };
+		DAA51EC3283545D300529F56 /* NewsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DAA51EC1283545D300529F56 /* NewsTableViewCell.xib */; };
+		DAA51EC5283546FB00529F56 /* NewsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EC4283546FB00529F56 /* NewsDataModel.swift */; };
+		DAA51EC7283551A500529F56 /* appExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAA51EC6283551A500529F56 /* appExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6873A6F39227579E237F4CDE /* Pods_playo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_playo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA74543B2835D3A600135D37 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		DAA51EA5283544C900529F56 /* playo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = playo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAA51EA8283544C900529F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DAA51EAA283544C900529F56 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,12 @@
 		DAA51EB1283544C900529F56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAA51EB4283544C900529F56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAA51EB6283544C900529F56 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA51EC0283545D300529F56 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
+		DAA51EC1283545D300529F56 /* NewsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsTableViewCell.xib; sourceTree = "<group>"; };
+		DAA51EC4283546FB00529F56 /* NewsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataModel.swift; sourceTree = "<group>"; };
+		DAA51EC6283551A500529F56 /* appExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appExtension.swift; sourceTree = "<group>"; };
+		F08AE6A733703BD221B4BD47 /* Pods-playo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playo.debug.xcconfig"; path = "Target Support Files/Pods-playo/Pods-playo.debug.xcconfig"; sourceTree = "<group>"; };
+		F1E7B1ED07F0EA4874CAE718 /* Pods-playo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-playo.release.xcconfig"; path = "Target Support Files/Pods-playo/Pods-playo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +45,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CAA10D8D92EB382574712B1 /* Pods_playo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		49DAEF9374C5334F3EAAA714 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F08AE6A733703BD221B4BD47 /* Pods-playo.debug.xcconfig */,
+				F1E7B1ED07F0EA4874CAE718 /* Pods-playo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		61DE7DD5113D7FA9CC6253E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6873A6F39227579E237F4CDE /* Pods_playo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DAA51E9C283544C900529F56 = {
 			isa = PBXGroup;
 			children = (
 				DAA51EA7283544C900529F56 /* playo */,
 				DAA51EA6283544C900529F56 /* Products */,
+				49DAEF9374C5334F3EAAA714 /* Pods */,
+				61DE7DD5113D7FA9CC6253E1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +90,52 @@
 		DAA51EA7283544C900529F56 /* playo */ = {
 			isa = PBXGroup;
 			children = (
-				DAA51EA8283544C900529F56 /* AppDelegate.swift */,
-				DAA51EAA283544C900529F56 /* SceneDelegate.swift */,
-				DAA51EAC283544C900529F56 /* ViewController.swift */,
-				DAA51EAE283544C900529F56 /* Main.storyboard */,
-				DAA51EB1283544C900529F56 /* Assets.xcassets */,
-				DAA51EB3283544C900529F56 /* LaunchScreen.storyboard */,
+				DAA51EBF283544F800529F56 /* HelpingFiles */,
+				DAA51EBC283544D300529F56 /* Model */,
+				DAA51EBD283544DD00529F56 /* View */,
+				DAA51EBE283544E500529F56 /* Controller */,
 				DAA51EB6283544C900529F56 /* Info.plist */,
 			);
 			path = playo;
+			sourceTree = "<group>";
+		};
+		DAA51EBC283544D300529F56 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DAA51EC4283546FB00529F56 /* NewsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DAA51EBD283544DD00529F56 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DAA51EC1283545D300529F56 /* NewsTableViewCell.xib */,
+				DAA51EB3283544C900529F56 /* LaunchScreen.storyboard */,
+				DAA51EAE283544C900529F56 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DAA51EBE283544E500529F56 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DAA51EAC283544C900529F56 /* ViewController.swift */,
+				DA74543B2835D3A600135D37 /* WebViewController.swift */,
+				DAA51EC0283545D300529F56 /* NewsTableViewCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DAA51EBF283544F800529F56 /* HelpingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				DAA51EB1283544C900529F56 /* Assets.xcassets */,
+				DAA51EA8283544C900529F56 /* AppDelegate.swift */,
+				DAA51EAA283544C900529F56 /* SceneDelegate.swift */,
+				DAA51EC6283551A500529F56 /* appExtension.swift */,
+			);
+			path = HelpingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +145,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DAA51EB9283544C900529F56 /* Build configuration list for PBXNativeTarget "playo" */;
 			buildPhases = (
+				85564D40673A5FE6CB50D085 /* [CP] Check Pods Manifest.lock */,
 				DAA51EA1283544C900529F56 /* Sources */,
 				DAA51EA2283544C900529F56 /* Frameworks */,
 				DAA51EA3283544C900529F56 /* Resources */,
+				86C326AA59A4534D6957AB29 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +200,66 @@
 			files = (
 				DAA51EB5283544C900529F56 /* LaunchScreen.storyboard in Resources */,
 				DAA51EB2283544C900529F56 /* Assets.xcassets in Resources */,
+				DAA51EC3283545D300529F56 /* NewsTableViewCell.xib in Resources */,
 				DAA51EB0283544C900529F56 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		85564D40673A5FE6CB50D085 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-playo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86C326AA59A4534D6957AB29 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-playo/Pods-playo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-playo/Pods-playo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-playo/Pods-playo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DAA51EA1283544C900529F56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAA51EC5283546FB00529F56 /* NewsDataModel.swift in Sources */,
+				DAA51EC7283551A500529F56 /* appExtension.swift in Sources */,
 				DAA51EAD283544C900529F56 /* ViewController.swift in Sources */,
 				DAA51EA9283544C900529F56 /* AppDelegate.swift in Sources */,
+				DA74543C2835D3A600135D37 /* WebViewController.swift in Sources */,
+				DAA51EC2283545D300529F56 /* NewsTableViewCell.swift in Sources */,
 				DAA51EAB283544C900529F56 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +402,7 @@
 		};
 		DAA51EBA283544C900529F56 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F08AE6A733703BD221B4BD47 /* Pods-playo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +431,7 @@
 		};
 		DAA51EBB283544C900529F56 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E7B1ED07F0EA4874CAE718 /* Pods-playo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
